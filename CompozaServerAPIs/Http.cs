@@ -26,7 +26,8 @@ namespace CompozaServerAPIs
             name = name ?? data?.name;
 
             string responseMessage = string.IsNullOrEmpty(name)
-                ? "hari om  yml file addedHTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
+                ? "hari om  yml file added" +
+                "HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
                 : $"Hello, {name}. This HTTP triggered function executed successfully. yml file added";
 
             return new OkObjectResult(responseMessage);
